@@ -1,0 +1,20 @@
+$colorYellow: #FAEE1C;
+$colorPink: #F3558E;
+$colorLPurple: #9C1DE7;
+$colorDPurple: #581B98;
+$colorBlack: #333;
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $colorLPurple;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+// color pallete https://colorhunt.co/palette/faee1cf3558e9c1de7581b98
