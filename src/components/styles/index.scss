@@ -3,13 +3,14 @@ $colorPink: #F3558E;
 $colorLPurple: #9C1DE7;
 $colorDPurple: #581B98;
 $colorBlack: #333;
+$bgdwhite: rgb(233, 233, 233);
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $colorLPurple;
+  background: white;
 }
 
 code {
@@ -17,4 +18,50 @@ code {
     monospace;
 }
 
+main{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.datainput{
+  margin: 1em 0 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  button{
+    border: none;
+    border-radius: 0;
+    background: $colorPink;
+    color: $colorBlack;
+    font-size: 1rem;
+    padding: 1em;
+  }
+  button:hover{
+    background: $colorLPurple;
+    color: white;
+    cursor: pointer;
+  }
+  input{
+    border: none;
+    background: $colorBlack;
+    color: $colorYellow;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 1em;
+    min-width:10vw;
+  }
+}
+
+footer{
+  margin: 0;
+  width: 100%;
+  font-size: 2rem;
+  background: grey;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em 0 1em 0;
+}
 // color pallete https://colorhunt.co/palette/faee1cf3558e9c1de7581b98

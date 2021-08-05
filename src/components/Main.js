@@ -28,7 +28,7 @@ class Main extends React.Component {
     let newData = new FetchData();
     setTimeout(() => {
       newData.getAPIdata(this.state.cityName).then((data) => {
-        ReactDOM.render(<CityCard data={data} />, document.getElementById('cityCard'))
+        ReactDOM.render(<CityCard data={data} />, document.getElementById('cityCard-holder'))
       })
       this.setState({ loading: false })
     }, 1000);
@@ -37,15 +37,17 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        <input
-          type="text"
-          name='cityName'
-          placeholder="Which city do you want?"
-          value={this.state.cityName}
-          onChange={this.handleChange}
-        />
-        <button onClick={this.handleApi}>Show me weather!</button>
-        <div id='cityCard' className='cityCard'>
+        <div className='datainput'>
+          <input
+            type="text"
+            name='cityName'
+            placeholder="Which city do you want?"
+            value={this.state.cityName}
+            onChange={this.handleChange}
+          />
+          <button onClick={this.handleApi}>Show me weather!</button>
+        </div>
+        <div id='cityCard-holder' className='cityCard-holder'>
           {this.state.loading ?
             <div className='loading-wrap'>
               <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>

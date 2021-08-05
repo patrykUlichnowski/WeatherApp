@@ -4,7 +4,7 @@ import './styles/header.scss'
 function Header() {
   return (
     <header>
-      Weather app made in JS.
+      ☀Weather app made in JS
     </header>
   )
 }

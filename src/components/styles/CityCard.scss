@@ -1,6 +1,69 @@
+@import 'index.scss';
+
 .cityCard{
   position: relative;
-  border: solid 1px white;
+  background: $colorBlack;
+  color: white;
   width: auto;
   min-height: 10vh;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  .flag{
+    padding: 0;
+    margin: 0;
+    img{
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+.map{
+  position: relative;
+  width: 40vw;
+}
+.map > div:nth-child(1){
+  width: 100%;
+  height: 100%;
+}
+.data{
+  padding: 1em;
+  display: grid;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cityCard-holder{
+  position: relative;
+  width: auto;
+  min-height: 10vh;
+  min-width: 20vw;
+  .flag{
+    padding: 0;
+    margin: 0;
+    img{
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.city-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    margin: 0;
+  }
+}
+
+.weather{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 4em;
+    height: 4em;
+  }
 }
