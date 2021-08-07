@@ -35,6 +35,9 @@ class CityCard extends React.Component {
               Pressure {this.props.data.main.pressure}hPa
             </p>
             <p>
+              Humidity {this.props.data.main.humidity}%
+            </p>
+            <p>
               Wind speed {((this.props.data.wind.speed) * 3.6).toFixed(1)} km/h
             </p>
           </div>
@@ -60,7 +63,13 @@ class CityCard extends React.Component {
     } catch (error) {
       console.log(error);
       return (
-        <h1>You have to choose a city!</h1>
+        <div className='error'>
+          <h1>You have to choose a city</h1>
+          <img
+            src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Exclamation_mark_2.svg/1200px-Exclamation_mark_2.svg.png'
+            alt='!'
+          />
+        </div>
       )
     }
   }

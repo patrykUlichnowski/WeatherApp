@@ -38,6 +38,7 @@ class Main extends React.Component {
     return (
       <main>
         <div className='datainput'>
+          <h2>City name:</h2>
           <input
             type="text"
             name='cityName'
